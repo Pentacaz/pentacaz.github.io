@@ -23,22 +23,13 @@ concurrency:
 
 jobs:
   # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
+- name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
-  # Deployment job
+          # This forces the build to look at the current folder only
+          source: .
+          # This ensures the output is generated into the standard _site folder
+          destination: ./_site  # Deployment job
   deploy:
     environment:
       name: github-pages
