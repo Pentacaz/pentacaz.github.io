@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--#region HEAD  -->
 <head>
     <meta name="description" content="Technical Art portfolio by Emilia Engelbach. Specializing in Unreal Engine 5, Shaders, Niagara VFX and Blueprint scripting.">
     <meta name="author" content="Emilia Engelbach">
@@ -11,6 +13,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
+<!--#endregion -->
+
+<!--#region BODY  -->
 <body>
 
 <div id="particle-container"></div>
@@ -20,7 +25,7 @@
         <h1>Technical Art & Design</h1>
         <h2>Emilia Engelbach</h2>
     </div>
-    
+    <!--#region NAVIGATION PARALLAX CARDS  -->
     <nav>
     <section class="card-container" id="category-nav">
         <div class="nav-card active" data-target="shaders">
@@ -48,13 +53,13 @@
         </div>
     </section>
     </nav>
-    
+    <!--#endregion -->
     <div class="header-transition"></div>
 </header>
 
 <main>
 <div class="portfolio-wrapper">
-    <!-- Shader blocks -->
+    <!--#region SHADER BLOCKS  -->
     <section id="shaders" class="portfolio-section" style="display: block;">
         <div class="section-header"><h2>Shaders & Tech Look-Dev</h2></div>
         <div class="grid-seamless">
@@ -81,8 +86,9 @@
             </div>
         </div>
     </section>
+    <!--#endregion -->
 
-    <!-- VFX blocks -->
+    <!--#region VFX BLOCKS  -->
     <section id="vfx" class="portfolio-section">
         <div class="section-header"><h2>Real-Time VFX</h2></div>
         <div class="grid-seamless">
@@ -95,8 +101,9 @@
             </div>
         </div>
     </section>
-
-    <!-- system blocks -->
+    <!--#endregion -->
+    
+    <!--#region UE/BP BLOCKS  -->
     <section id="systems" class="portfolio-section">
         <div class="section-header"><h2>Technical Systems & Optimization</h2></div>
         <div class="grid-seamless">
@@ -109,9 +116,10 @@
             </div>
         </div>
     </section>
+    <!--#endregion -->
 </div>
 
-<!-- about me -->
+    <!--#region ABOUT ME  -->
 <section class="about-section" id="about">
     <div class="about-wrapper">
         <div class="about-image-container">
@@ -131,7 +139,9 @@
                 <br><br>
                 I love solving technical problems to bring creative visions to life.
             </p>
+        
             
+            <!--#region ABOUT ME STATUS WIDGET -->
             <div class="status-widget">
                 <div class="status-img-box">
                     <img src="assets/game_thumb.jpg" alt="Currently Playing">
@@ -145,6 +155,7 @@
                     <div class="status-details">Currently Playing • 64 min past 2 weeks</div>
                 </div>
             </div>
+            <!--#endregion -->
             
             <div class="about-details-grid">
                 <div class="details-column">
@@ -180,7 +191,7 @@
         </div>
     </div>
 </section>
-
+    <!--#endregion -->
 
 <section class="contact-container" id="contact">
     <h2>Let's talk</h2>
@@ -227,4 +238,5 @@
 <script src="script.js" defer></script>
 
 </body>
+<!--#endregion -->
 </html>
