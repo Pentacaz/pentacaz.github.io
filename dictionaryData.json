@@ -1,0 +1,47 @@
+{
+  "foliage": {
+    "title": "Procedural Foliage Shader",
+    "tags": ["UE5", "Substance Designer", "HLSL"],
+    "media": [
+      { "type": "video", "src": "assets/wind_sway_demo.mp4" },
+      { "type": "image", "src": "assets/node_graph.png" }
+    ],
+    "description": "<p> Material logic used to establish procedural wind sway.</p>"
+  },
+  "impact-vfx": {
+    "title": "Simple Combat Impact Particles",
+    "tags": ["Niagara", "VFX", "Blueprints"],
+    "media": [
+      { "type": "video", "src": "assets/impact_burst.mp4" }
+    ],
+    "description": "<p>Niagara system handling particle bursting upon hit detection.</p>"
+  },
+  "stylized_occlusion_filter": {
+    "title": "Stylized Occlusion Filter",
+    "tags": ["Shader Graph"],
+    "media": [
+      { "type": "video", "src": "assets/impact_burst.mp4" }
+    ],
+    "description": "<p>Custom filter application.</p>"
+  },
+  "combat": {
+    "title": "Parry & Combat Logic",
+    "tags": ["Blueprints", "Mechanics", "Animation"],
+    "media": [
+      { "type": "image", "src": "assets/blueprint_timeline.png" }
+    ],
+    "description": "<p>Implementation logic for a 'perfect parry' system utilizing animation notifies and timeline curves.</p>"
+  },
+  "RetroPP": {
+    "title": "Retro Post Process Material",
+    "tags": ["UE5", "Shader Graph"],
+    "media": [
+      { "type": "image", "src": "assets/Graph_PPRetro.png" },
+      { "type": "image", "src": "assets/PPRetro_Strenght.png" }
+    ],
+    "description": "<p>This is a post-process material used to apply a screen-wide distortion effect that imitates graphics of earlier console generations.<br><br>This material generates a retro-style screen-space UV distortion by using world-aligned screen coordinates to sample a noise texture, remapping its unsigned color values to a signed [-1, 1] range via vector arithmetic and scaling the resulting offset with a scalar parameter to dynamically displace the final SceneTexture:PostProcessInput0 UV lookup. <br><br>The texture intensity is freely adjustable. </p>",
+    "extraMedia": [
+      { "type": "video", "src": "assets/“Retro” Post-Processing Material.mp4" }
+    ]
+  }
+}

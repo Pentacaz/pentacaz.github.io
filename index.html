@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Technical Art portfolio by Emilia Engelbach. Specializing in Unreal Engine 5, Shaders, Niagara VFX and Blueprint scripting.">
+    <meta name="author" content="Emilia Engelbach">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilia Engelbach | Technical Art Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+</head>
+<body>
+
+<div id="particle-container"></div>
+
+<header class="image-header">
+    <div class="header-titles">
+        <h1>Technical Art & Design</h1>
+        <h2>Emilia Engelbach</h2>
+    </div>
+    
+    <nav>
+    <section class="card-container" id="category-nav">
+        <div class="nav-card active" data-target="shaders">
+            <div class="card-bg" style="background-image: url('assets/TechArtBG.png');"></div>
+            <div class="card-content">
+                <h3>Shaders & Look-Dev</h3>
+                <p>Materials & Post-Process</p>
+            </div>
+        </div>
+
+        <div class="nav-card" data-target="vfx">
+            <div class="card-bg" style="background-image: url('assets/ArtBG2.png');"></div>
+            <div class="card-content">
+                <h3>Real-Time VFX</h3>
+                <p>Niagara & Simulations</p>
+            </div>
+        </div>
+
+        <div class="nav-card" data-target="systems">
+            <div class="card-bg" style="background-image: url('assets/UnrealBG.png');"></div>
+            <div class="card-content">
+                <h3>Technical Systems</h3>
+                <p>Blueprints & Logic</p>
+            </div>
+        </div>
+    </section>
+    </nav>
+    
+    <div class="header-transition"></div>
+</header>
+
+<main>
+<div class="portfolio-wrapper">
+    <!-- Shader blocks -->
+    <section id="shaders" class="portfolio-section" style="display: block;">
+        <div class="section-header"><h2>Shaders & Tech Look-Dev</h2></div>
+        <div class="grid-seamless">
+            <div class="grid-item interactive-item" data-project="RetroPP">
+                <div class="grid-thumb" style="background-image: url('assets/RPP_BG.png');"></div>
+                <div class="grid-info">
+                    <h3>Retro Style Post-Processing</h3>
+                    <div class="tags"><span>UE5</span><span>Shader Graph</span></div>
+                </div>
+            </div>
+            <div class="grid-item interactive-item" data-project="stylized_occlusion_filter">
+                <div class="grid-thumb" style="background-image: url('assets/bean.webp');"></div>
+                <div class="grid-info">
+                    <h3>Stylized Occlusion</h3>
+                    <div class="tags"><span>Shader Graph</span></div>
+                </div>
+            </div>
+            <div class="grid-item interactive-item" data-project="foliage">
+                <div class="grid-thumb" style="background-image: url('assets/bean.webp');"></div>
+                <div class="grid-info">
+                    <h3>Procedural Foliage</h3>
+                    <div class="tags"><span>Shader Graph</span><span>UE5</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VFX blocks -->
+    <section id="vfx" class="portfolio-section">
+        <div class="section-header"><h2>Real-Time VFX</h2></div>
+        <div class="grid-seamless">
+            <div class="grid-item interactive-item" data-project="impact-vfx">
+                <div class="grid-thumb" style="background-image: url('assets/bean.webp');"></div>
+                <div class="grid-info">
+                    <h3>Impact Particles</h3>
+                    <div class="tags"><span>Niagara</span><span>VFX</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- system blocks -->
+    <section id="systems" class="portfolio-section">
+        <div class="section-header"><h2>Technical Systems & Optimization</h2></div>
+        <div class="grid-seamless">
+            <div class="grid-item interactive-item" data-project="combat">
+                <div class="grid-thumb" style="background-image: url('assets/bean.webp');"></div>
+                <div class="grid-info">
+                    <h3>Parry & Combat Logic</h3>
+                    <div class="tags"><span>Blueprints</span><span>Mechanics</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- about me -->
+<section class="about-section" id="about">
+    <div class="about-wrapper">
+        <div class="about-image-container">
+            <div class="profile-img-wrapper">
+                <img src="assets/self.jpg" alt="Emilia Profile" class="profile-img">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-header">
+                <h2> Hi there! </h2>
+                <div class="mascot">✧✦✧</div>
+            </div>
+
+            <p class="about-bio">
+                I'm a technical artist based in Germany, with a huge focus on Unreal Engine 5, shaders and VFX.
+                <br><br>
+                I love solving technical problems to bring creative visions to life.
+            </p>
+            
+            <div class="status-widget">
+                <div class="status-img-box">
+                    <img src="assets/game_thumb.jpg" alt="Currently Playing">
+                </div>
+                <div class="status-info">
+                    <div class="status-header-row">
+                        <div class="live-dot"></div>
+                        <span class="status-title">What is Emilia up to?</span>
+                    </div>
+                    <div class="status-game">Dead as Disco</div>
+                    <div class="status-details">Currently Playing • 64 min past 2 weeks</div>
+                </div>
+            </div>
+            
+            <div class="about-details-grid">
+                <div class="details-column">
+                    <h3>Education</h3>
+                    <div class="detail-item">
+                        <strong>KW Design Academy, Wandsbek</strong>
+                        <span>School-based Vocational Apprenticeship</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Fachabitur, Hamburg</strong>
+                        <span>Graduated with 1.8 GPA</span>
+                    </div>
+
+                    <h3 class="mt-4">Development</h3>
+                    <div class="detail-item">
+                        <strong>Unreal Engine Projects</strong>
+                        <span>"Perfect parry" systems, breaking point mechanics</span>
+                    </div>
+                </div>
+
+                <div class="details-column">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-icon" title="Unreal Engine 5">UE5</div>
+                        <div class="skill-icon" title="Blueprints">BP</div>
+                        <div class="skill-icon" title="Niagara VFX">VFX</div>
+                        <div class="skill-icon" title="Substance 3D Designer">DS</div>
+                        <div class="skill-icon" title="Substance 3D Painter">PT</div>
+                        <div class="skill-icon" title="Clip Studio Paint">CSP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-container" id="contact">
+    <h2>Let's talk</h2>
+    <p>Available for freelance opportunities and full-time positions.</p>
+    <div class="button-grid">
+        <a href="mailto:pentacaz.worktogether@gmail.com" class="btn primary">Send Email</a>
+        <a href="https://www.artstation.com/pentacaz" class="btn">ArtStation</a>
+        <a href="https://www.linkedin.com/in/emilia-leonie-engelbach-42254b256/?locale=de" class="btn">LinkedIn</a>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>Emilia Leonie Engelbach © 2026</p>
+    <p>Made with ♡ and fish </p>
+</footer>
+
+<!-- return to top-->
+<button id="back-to-top" class="btn" aria-label="Scroll to top">↑</button>
+
+<div class="modal-overlay" id="project-modal">
+    <div class="modal-content">
+        <button class="modal-close" id="close-modal">&times;</button>
+        <div class="modal-header">
+            <h2 id="modal-title">Project Title</h2>
+            <div id="modal-tags" class="tags"></div>
+        </div>
+        <div class="modal-gallery" id="modal-gallery"></div>
+        <div class="modal-body" id="modal-body"></div>
+
+        <div class="extra-gallery-container" id="extra-gallery-section" style="display: none;">
+            <div class="extra-modal-gallery modal-gallery" id="extra-modal-gallery">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img src="" alt="Enlarged view" class="lightbox-image" id="lightbox-img">
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
